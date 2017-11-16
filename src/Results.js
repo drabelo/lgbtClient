@@ -16,7 +16,7 @@ class Results extends Component {
   getCraigslistListings(city) {
     let listings = [];
     let formattedCity = city.replace(" ", '');
-    fetch(`http://localhost:3001/listings?city=${formattedCity}`)
+    fetch(`https://lgbtserver.herokuapp.com/listings?city=${formattedCity}`)
     .then((response) => {
       return response.json()
     })
